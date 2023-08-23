@@ -1,8 +1,5 @@
-let mytodo_list = [
-  // "Do Exercise",
-  // "Complete Projects",
-  // "English Speaking Practice",
-];
+let mytodo_list = JSON.parse(localStorage.getItem("tasklist")) || [];
+
 
 let addtask = document.querySelector("#addtask");
 let addbtn = document.querySelector("#addbtn");
